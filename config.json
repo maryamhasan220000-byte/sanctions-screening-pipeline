@@ -1,0 +1,50 @@
+{
+"pipeline": {
+    "name": "Sanctions Screening Pipeline",
+    "version": "1.0.0"
+},
+"data_sources":{
+    "ofac": {
+        "enabled":true,
+        "filepath": "data/sanctions/ofac.csv",
+        "name_column_index":1,
+        "encoding": "utf-8",
+        "label":"OFAC SDN LIST"
+    },
+    "eu": {
+        "enabled": false,
+        "filepath": "data/sanctions/eu.csv",
+        "name_column_index":1,
+        "encoding": "utf-8",
+        "label": "EU CONSOLIDATED LIST"
+    },
+    "un":{
+        "enabled": false,
+        "filepath": "data/sanctions/un.csv",
+        "name_column_index": 1,
+        "encoding": "utf-8",
+        "label": "UNI SECURITY COUNCIL LIST"
+    }
+},
+"input":{
+    "filepath": "data/input/watchlist.csv",
+    "name_column":"name",
+    "encoding": "utf-8",
+    "skip_below_length": 3
+},
+"matching":{
+    "exact_match_threshold": 1.0,
+    "partial_match_threshold": 0.85,
+    "case_sensitive": false,
+    "strip_punctuation":true
+},
+"output":{
+"exact_match_filepath":"data/output/exact_matches.csv",
+"partial_match_filepath": "data/output/partial_match.csv",
+"encoding": "utf-8"
+},
+"logging":{
+    "filepath": "log/screening_log.json",
+    "level": "INFO"
+}
+}

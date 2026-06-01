@@ -1,0 +1,32 @@
+============================================================
+     SANCTIONS SCREENING SUMMARY REPORT
+============================================================
+
+generated   : 2026-06-01 22:58:22
+watchlist   : 17 entries screened
+Sanctions   : 19050 sanctioned entries checked 
+exact matches: 1
+partial matches:1
+
+============================================================
+EXACT MATCHES
+============================================================
+    CASE ID     :HAVANATUR
+    INPUT       :HAVANATUR
+    MATCHED     :HAVANATUR
+    SCORE       :1.0
+    SOURCE      :OFAC SDN LIST
+    COUNTRY     :Cuba
+============================================================
+PARTIAL MATCHES
+============================================================
+    CASE ID     :HAVANATUR
+    INPUT       :HAVANATUR
+    MATCHED     :HAVANATUR S.A.
+    SCORE       :0.8571
+    SOURCE      :OFAC SDN LIST
+    COUNTRY     :Cuba
+
+============================================================
+end of report
+============================================================

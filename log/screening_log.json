@@ -1,0 +1,66 @@
+[
+    {
+        "timestamp": "2026-05-31 23:44:04",
+        "pipeline_name": "Sanctions Screening Pipeline",
+        "pipeline_version": "1.0.0",
+        "status": "SUCCESS",
+        "screening_summary": {
+            "watchlist_count": 17,
+            "sanctions_count": 19050,
+            "exact_matches": 1,
+            "partial_matches": 1
+        },
+        "exact_matches": [
+            {
+                "case_id": "HAVANATUR",
+                "input_name": "HAVANATUR",
+                "matched_name": "HAVANATUR",
+                "score": 1.0,
+                "sources": "OFAC SDN LIST",
+                "country": "Cuba"
+            }
+        ],
+        "partial_matches": [
+            {
+                "case_id": "HAVANATUR",
+                "input_name": "HAVANATUR",
+                "matched_name": "HAVANATUR S.A.",
+                "score": 0.8571,
+                "sources": "OFAC SDN LIST",
+                "country": "Cuba"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-06-01 23:10:08",
+        "pipeline_name": "Sanctions Screening Pipeline",
+        "pipeline_version": "1.0.0",
+        "status": "SUCCESS",
+        "screening_summary": {
+            "watchlist_count": 17,
+            "sanctions_count": 19050,
+            "exact_matches": 1,
+            "partial_matches": 1
+        },
+        "exact_matches": [
+            {
+                "case_id": "HAVANATUR",
+                "input_name": "HAVANATUR",
+                "matched_name": "HAVANATUR",
+                "score": 1.0,
+                "sources": "OFAC SDN LIST",
+                "country": "Cuba"
+            }
+        ],
+        "partial_matches": [
+            {
+                "case_id": "HAVANATUR",
+                "input_name": "HAVANATUR",
+                "matched_name": "HAVANATUR S.A.",
+                "score": 0.8571,
+                "sources": "OFAC SDN LIST",
+                "country": "Cuba"
+            }
+        ]
+    }
+]
